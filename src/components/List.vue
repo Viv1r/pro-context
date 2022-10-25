@@ -89,8 +89,11 @@ export default {
     },
     methods: {
         submitCount(index) {
-            this.$emit('setItemValue', index, 'count', parseInt(this.inputTemp[index]));
             this.$emit('setItemValue', index, 'editCount', false);
+            const newCount = parseInt(this.inputTemp[index]) > 0
+                ? parseInt(this.inputTemp[index])
+                : 0;
+            this.$emit('setItemValue', index, 'count', newCount);
         },
         submitColor(index) {
             this.$emit('setItemValue', index, 'color', this.inputTemp[index]);

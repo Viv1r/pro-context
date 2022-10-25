@@ -42,11 +42,12 @@
   gap: 16px;
 }
 .list__header__content {
-  cursor: pointer;
+  max-width: 95%;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
 }
 .list__header input {
   width: 16px;
@@ -54,8 +55,12 @@
   cursor: pointer;
 }
 .list__title {
+  max-width: 100%;
   user-select: none;
   line-height: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .list .expand_indicator {
   width: 12px;
@@ -82,6 +87,12 @@
   width: 16px;
   height: 16px;
   cursor: pointer;
+}
+.list .item__title {
+  max-width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .list .item__count {
   margin-left: auto;
