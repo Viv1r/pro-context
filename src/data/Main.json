@@ -1,0 +1,152 @@
+[
+    {
+        "title": "First list",
+        "items": [
+            {
+                "title": "Item 1",
+                "count": 10,
+                "color": "#ff0000"
+            },
+            {
+                "title": "Item 2",
+                "count": 16,
+                "color": "#ffff00"
+            },
+            {
+                "title": "Item 3",
+                "count": 40,
+                "color": "#00ff00"
+            },
+            {
+                "title": "Item 3",
+                "count": 0,
+                "color": "#0000ff"
+            }
+        ]
+    },
+    {
+        "title": "Second list",
+        "items": [
+            {
+                "title": "Item 123",
+                "count": 123,
+                "color": "#654321"
+            },
+            {
+                "title": "Item 456",
+                "count": 5,
+                "color": "#f99f99"
+            },
+            {
+                "title": "Item 789",
+                "count": 32,
+                "color": "#0a00a0"
+            },
+            {
+                "title": "Item 000",
+                "count": 32,
+                "color": "#e0a0c0"
+            }
+        ]
+    },
+    {
+        "title": "List number 3",
+        "items": [
+            {
+                "title": "ItEm",
+                "count": 32,
+                "color": "#04fcd0"
+            },
+            {
+                "title": "tEsT iTeM",
+                "count": 50,
+                "color": "#7818c6"
+            },
+            {
+                "title": "I am an item",
+                "count": 10,
+                "color": "#e6dc00"
+            },
+            {
+                "title": "Hello world",
+                "count": 111,
+                "color": "#1f7ed6"
+            },
+            {
+                "title": "qwerty",
+                "count": 5,
+                "color": "#798637"
+            }
+        ]
+    },
+    {
+        "title": "Fourth list",
+        "items": [
+            {
+                "title": "Item 1",
+                "count": 50,
+                "color": "#4647e8"
+            },
+            {
+                "title": "Item 2",
+                "count": 11,
+                "color": "#7818c6"
+            },
+            {
+                "title": "Item 3",
+                "count": 99,
+                "color": "#f64838"
+            },
+            {
+                "title": "Item 4",
+                "count": 0,
+                "color": "#1f7ed6"
+            },
+            {
+                "title": "Item 5",
+                "count": 8,
+                "color": "#cc57c7"
+            }
+        ]
+    },
+    {
+        "title": "Number five",
+        "items": [
+            {
+                "title": "Item 1",
+                "count": 75,
+                "color": "#0edf62"
+            },
+            {
+                "title": "Item 2",
+                "count": 0,
+                "color": "#f64838"
+            },
+            {
+                "title": "Item 3",
+                "count": 137,
+                "color": "#e6dc00"
+            },
+            {
+                "title": "Item 4",
+                "count": 213,
+                "color": "#1f7ed6"
+            },
+            {
+                "title": "Item 5",
+                "count": 12,
+                "color": "#798637"
+            },
+            {
+                "title": "Item 6",
+                "count": 81,
+                "color": "#203d76"
+            },
+            {
+                "title": "Item 7",
+                "count": 37,
+                "color": "#4647e8"
+            }
+        ]
+    }
+]

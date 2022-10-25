@@ -1,0 +1,147 @@
+@import './base.css';
+
+$color-button: #20a3ff;
+$color-button-hover: #0093ff;
+
+#app {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    margin: auto;
+}
+
+.workspace {
+    width: 90%;
+    max-height: 98vh;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    padding: 2.5%;
+    display: flex;
+    border: 1px solid black;
+}
+
+.left_panel,
+.right_panel {
+    width: 40%;
+    height: auto;
+    max-height: 100%;
+    border: 1px solid black;
+    margin: 0 auto 0 auto;
+    padding: 32px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.list {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        &__content {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+        }
+        input {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+    }
+    &__title {
+        user-select: none;
+        line-height: 2rem;
+    }
+    .expand_indicator {
+        width: 12px;
+        height: 12px;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        transform: rotate(-45deg);
+        right: 3px;
+        &.active {
+            transform: rotate(45deg);
+            bottom: 3px;
+            right: 0px;
+        }
+    }
+    .item {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        input[type=checkbox] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+        &__count {
+            margin-left: auto;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+            &_input {
+                margin-left: auto;
+                width: 32px;
+            }
+        }
+        &__icon {
+            width: 16px;
+            height: 16px;
+            background-color: gray;
+            cursor: pointer;
+        }
+    }
+}
+
+.detailed_list {
+    border: 1px solid black;
+    margin-bottom: 16px;
+    padding: 8px;
+    .item {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin: 12px auto;
+    }
+    .item_instance {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        min-height: 16px;
+        background-color: gray;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+    .button_shuffle,
+    .button_sort {
+        margin-left: auto;
+        width: fit-content;
+        height: fit-content;
+        background-color: $color-button;
+        font-size: 0.75rem;
+        color: white;
+        padding: 2px 12px 2px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-button-hover;
+        }
+    }
+}

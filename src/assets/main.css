@@ -1,0 +1,146 @@
+@import './base.css';
+#app {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin: auto;
+}
+
+.workspace {
+  width: 90%;
+  max-height: 98vh;
+  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+  padding: 2.5%;
+  display: flex;
+  border: 1px solid black;
+}
+
+.left_panel,
+.right_panel {
+  width: 40%;
+  height: auto;
+  max-height: 100%;
+  border: 1px solid black;
+  margin: 0 auto 0 auto;
+  padding: 32px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.list {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.list__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.list__header__content {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.list__header input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.list__title {
+  user-select: none;
+  line-height: 2rem;
+}
+.list .expand_indicator {
+  width: 12px;
+  height: 12px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(-45deg);
+  right: 3px;
+}
+.list .expand_indicator.active {
+  transform: rotate(45deg);
+  bottom: 3px;
+  right: 0px;
+}
+.list .item {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.list .item input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.list .item__count {
+  margin-left: auto;
+  cursor: pointer;
+}
+.list .item__count:hover {
+  text-decoration: underline;
+}
+.list .item__count_input {
+  margin-left: auto;
+  width: 32px;
+}
+.list .item__icon {
+  width: 16px;
+  height: 16px;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.detailed_list {
+  border: 1px solid black;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+.detailed_list .item {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 12px auto;
+}
+.detailed_list .item_instance {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  background-color: gray;
+}
+.detailed_list__header {
+  display: flex;
+  align-items: center;
+}
+.detailed_list .button_shuffle,
+.detailed_list .button_sort {
+  margin-left: auto;
+  width: fit-content;
+  height: fit-content;
+  background-color: #20a3ff;
+  font-size: 0.75rem;
+  color: white;
+  padding: 2px 12px 2px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.detailed_list .button_shuffle:hover,
+.detailed_list .button_sort:hover {
+  background-color: #0093ff;
+}
+
+/*# sourceMappingURL=main.css.map */
